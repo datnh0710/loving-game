@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Create a separate CSS file for styling -->
+    <title>Love Question!!!</title>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1>Love Question!!!</h1>
+        <div id="question-container">
+            <p id="question-text">Are you ready for some love questions?</p>
+            <button class="btn btn-primary" onclick="askQuestion(true)">Yes</button>
+            <button class="btn btn-danger" onclick="askQuestion(false)">No</button>
+        </div>
+        <div id="result-container" class="d-none">
+            <p id="result-text"></p>
+            <div id="love-animation-container"></div>
+            <!-- <button class="btn btn-primary" onclick="resetGame()">Play Again</button> -->
+        </div>
+        <div class="animation-container" id="love-animation-container1"></div>
+        <div class="animation-container" id="love-animation-container2"></div>
+        <div class="animation-container" id="love-animation-container3"></div>
+    </div>
+    <script src="script.js"></script> <!-- Create a separate JS file for your script -->
+</body>
+
+</html>
